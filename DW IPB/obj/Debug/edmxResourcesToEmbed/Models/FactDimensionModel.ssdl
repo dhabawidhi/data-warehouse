@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBPKLG62016Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Departemen">
+    <Key>
+      <PropertyRef Name="DepartemenKey" />
+    </Key>
+    <Property Name="DepartemenKey" Type="int" Nullable="false" />
+    <Property Name="DepartemenNama" Type="nvarchar" MaxLength="80" />
+    <Property Name="Kode" Type="nvarchar" MaxLength="255" />
+    <Property Name="FakultasKey" Type="int" />
+  </EntityType>
+  <EntityType Name="DepartemenDoktor">
+    <Key>
+      <PropertyRef Name="DepartemenKey" />
+    </Key>
+    <Property Name="DepartemenKey" Type="int" Nullable="false" />
+    <Property Name="DepartemenNama" Type="nvarchar" MaxLength="80" />
+    <Property Name="Kode" Type="nvarchar" MaxLength="20" />
+    <Property Name="FakultasKey" Type="int" />
+  </EntityType>
+  <EntityType Name="DepartemenMagister">
+    <Key>
+      <PropertyRef Name="DepartemenKey" />
+    </Key>
+    <Property Name="DepartemenKey" Type="int" Nullable="false" />
+    <Property Name="DepartemenNama" Type="nvarchar" MaxLength="80" />
+    <Property Name="Kode" Type="nvarchar" MaxLength="20" />
+    <Property Name="FakultasKey" Type="int" />
+  </EntityType>
+  <EntityType Name="Fakultas">
+    <Key>
+      <PropertyRef Name="FakultasKey" />
+    </Key>
+    <Property Name="FakultasKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FakultasNama" Type="nvarchar" MaxLength="80" />
+    <Property Name="Kode" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="JalurMasuk">
+    <Key>
+      <PropertyRef Name="JalurMasukKey" />
+    </Key>
+    <Property Name="JalurMasukKey" Type="int" Nullable="false" />
+    <Property Name="JalurMasukNama" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="JenisKelamin">
+    <Key>
+      <PropertyRef Name="JenisKelaminKey" />
+    </Key>
+    <Property Name="JenisKelaminKey" Type="int" Nullable="false" />
+    <Property Name="JenisKelaminNama" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Predikat">
+    <Key>
+      <PropertyRef Name="PredikatKey" />
+    </Key>
+    <Property Name="PredikatKey" Type="int" Nullable="false" />
+    <Property Name="Nama" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ProgramKeahlian">
+    <Key>
+      <PropertyRef Name="ProgramKeahlianKey" />
+    </Key>
+    <Property Name="ProgramKeahlianKey" Type="int" Nullable="false" />
+    <Property Name="ProgramKeahlianNama" Type="nvarchar" MaxLength="80" />
+    <Property Name="Kode" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="StatusAkademik">
+    <Key>
+      <PropertyRef Name="StatusAkademikKey" />
+    </Key>
+    <Property Name="StatusAkademikKey" Type="int" Nullable="false" />
+    <Property Name="StatusAkademikNama" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="WaktuSarjana">
+    <Key>
+      <PropertyRef Name="WaktuKey" />
+    </Key>
+    <Property Name="WaktuKey" Type="int" Nullable="false" />
+    <Property Name="TahunAwal" Type="int" />
+    <Property Name="TahunAkademik" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="WaktuTahunDiploma">
+    <Key>
+      <PropertyRef Name="WaktuKey" />
+    </Key>
+    <Property Name="WaktuKey" Type="int" Nullable="false" />
+    <Property Name="TahunAkademik" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="WaktuTahunDoktor">
+    <Key>
+      <PropertyRef Name="WaktuKey" />
+    </Key>
+    <Property Name="WaktuKey" Type="int" Nullable="false" />
+    <Property Name="TahunAkademik" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="WaktuTahunMagister">
+    <Key>
+      <PropertyRef Name="WaktuKey" />
+    </Key>
+    <Property Name="WaktuKey" Type="int" Nullable="false" />
+    <Property Name="TahunAkademik" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="WaktuTahunSarjana">
+    <Key>
+      <PropertyRef Name="WaktuKey" />
+    </Key>
+    <Property Name="WaktuKey" Type="int" Nullable="false" />
+    <Property Name="TahunAkademik" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Diploma3">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WaktuKey" Type="int" />
+    <Property Name="ProgramKeahlianKey" Type="int" />
+    <Property Name="JalurMasukKey" Type="int" />
+    <Property Name="StatusAkademikKey" Type="int" />
+    <Property Name="JenisKelaminKey" Type="int" />
+    <Property Name="JumlahMahasiswa" Type="int" />
+    <Property Name="RataRataNEMSMA" Type="float" />
+  </EntityType>
+  <EntityType Name="Doktor3">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WaktuKey" Type="int" />
+    <Property Name="DepartemenKey" Type="int" />
+    <Property Name="JalurMasukKey" Type="int" />
+    <Property Name="JenisKelaminKey" Type="int" />
+    <Property Name="JumlahMahasiswa" Type="int" />
+  </EntityType>
+  <EntityType Name="JumlahPSSarjana">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WaktuKey" Type="int" />
+    <Property Name="DepartemenKey" Type="int" />
+    <Property Name="JumlahMahasiswa" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Magister3">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WaktuKey" Type="int" />
+    <Property Name="DepartemenKey" Type="int" />
+    <Property Name="JalurMasukKey" Type="int" />
+    <Property Name="JenisKelaminKey" Type="int" />
+    <Property Name="JumlahMahasiswa" Type="int" />
+  </EntityType>
+  <EntityType Name="RataRataSKSSarjana">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WaktuKey" Type="int" Nullable="false" />
+    <Property Name="SemesterMahasiswa" Type="int" />
+    <Property Name="RataRataSKS" Type="int" />
+  </EntityType>
+  <EntityType Name="Sarjana3">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WaktuKey" Type="int" />
+    <Property Name="DepartemenKey" Type="int" />
+    <Property Name="JalurMasukKey" Type="int" />
+    <Property Name="StatusAkademikKey" Type="int" />
+    <Property Name="JenisKelaminKey" Type="int" />
+    <Property Name="JumlahMahasiswa" Type="int" />
+  </EntityType>
+  <EntityType Name="SarjanaIPKTPB">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WaktuKey" Type="int" />
+    <Property Name="DepartemenKey" Type="int" />
+    <Property Name="RataRataIPKTPB" Type="float" />
+  </EntityType>
+  <EntityType Name="SarjanaLulusan2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="WaktuKey" Type="int" />
+    <Property Name="DepartemenKey" Type="int" />
+    <Property Name="RataRataIPKLulusan" Type="float" />
+    <Property Name="RataRataLamaStudi" Type="int" />
+    <Property Name="ProsentaseLulusTepatWaktu" Type="int" />
+    <Property Name="RataRataWaktuMemperolehPek" Type="float" />
+  </EntityType>
+  <Association Name="FK_Departemen_Fakultas">
+    <End Role="Fakultas" Type="Self.Fakultas" Multiplicity="0..1" />
+    <End Role="Departemen" Type="Self.Departemen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fakultas">
+        <PropertyRef Name="FakultasKey" />
+      </Principal>
+      <Dependent Role="Departemen">
+        <PropertyRef Name="FakultasKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DepartemenDoktor_Fakultas">
+    <End Role="Fakultas" Type="Self.Fakultas" Multiplicity="0..1" />
+    <End Role="DepartemenDoktor" Type="Self.DepartemenDoktor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fakultas">
+        <PropertyRef Name="FakultasKey" />
+      </Principal>
+      <Dependent Role="DepartemenDoktor">
+        <PropertyRef Name="FakultasKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DepartemenMagister_Fakultas">
+    <End Role="Fakultas" Type="Self.Fakultas" Multiplicity="0..1" />
+    <End Role="DepartemenMagister" Type="Self.DepartemenMagister" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fakultas">
+        <PropertyRef Name="FakultasKey" />
+      </Principal>
+      <Dependent Role="DepartemenMagister">
+        <PropertyRef Name="FakultasKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Diploma3_JalurMasuk">
+    <End Role="JalurMasuk" Type="Self.JalurMasuk" Multiplicity="0..1" />
+    <End Role="Diploma3" Type="Self.Diploma3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JalurMasuk">
+        <PropertyRef Name="JalurMasukKey" />
+      </Principal>
+      <Dependent Role="Diploma3">
+        <PropertyRef Name="JalurMasukKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Diploma3_JenisKelamin">
+    <End Role="JenisKelamin" Type="Self.JenisKelamin" Multiplicity="0..1" />
+    <End Role="Diploma3" Type="Self.Diploma3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JenisKelamin">
+        <PropertyRef Name="JenisKelaminKey" />
+      </Principal>
+      <Dependent Role="Diploma3">
+        <PropertyRef Name="JenisKelaminKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Diploma3_ProgramKeahlian">
+    <End Role="ProgramKeahlian" Type="Self.ProgramKeahlian" Multiplicity="0..1" />
+    <End Role="Diploma3" Type="Self.Diploma3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProgramKeahlian">
+        <PropertyRef Name="ProgramKeahlianKey" />
+      </Principal>
+      <Dependent Role="Diploma3">
+        <PropertyRef Name="ProgramKeahlianKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Diploma3_StatusAkademik">
+    <End Role="StatusAkademik" Type="Self.StatusAkademik" Multiplicity="0..1" />
+    <End Role="Diploma3" Type="Self.Diploma3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusAkademik">
+        <PropertyRef Name="StatusAkademikKey" />
+      </Principal>
+      <Dependent Role="Diploma3">
+        <PropertyRef Name="StatusAkademikKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Diploma3_WaktuTahunDiploma">
+    <End Role="WaktuTahunDiploma" Type="Self.WaktuTahunDiploma" Multiplicity="0..1" />
+    <End Role="Diploma3" Type="Self.Diploma3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WaktuTahunDiploma">
+        <PropertyRef Name="WaktuKey" />
+      </Principal>
+      <Dependent Role="Diploma3">
+        <PropertyRef Name="WaktuKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Doktor3_DepartemenDoktor">
+    <End Role="DepartemenDoktor" Type="Self.DepartemenDoktor" Multiplicity="0..1" />
+    <End Role="Doktor3" Type="Self.Doktor3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DepartemenDoktor">
+        <PropertyRef Name="DepartemenKey" />
+      </Principal>
+      <Dependent Role="Doktor3">
+        <PropertyRef Name="DepartemenKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Doktor3_JalurMasuk">
+    <End Role="JalurMasuk" Type="Self.JalurMasuk" Multiplicity="0..1" />
+    <End Role="Doktor3" Type="Self.Doktor3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JalurMasuk">
+        <PropertyRef Name="JalurMasukKey" />
+      </Principal>
+      <Dependent Role="Doktor3">
+        <PropertyRef Name="JalurMasukKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Doktor3_JenisKelamin">
+    <End Role="JenisKelamin" Type="Self.JenisKelamin" Multiplicity="0..1" />
+    <End Role="Doktor3" Type="Self.Doktor3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JenisKelamin">
+        <PropertyRef Name="JenisKelaminKey" />
+      </Principal>
+      <Dependent Role="Doktor3">
+        <PropertyRef Name="JenisKelaminKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Doktor3_WaktuTahunDoktor">
+    <End Role="WaktuTahunDoktor" Type="Self.WaktuTahunDoktor" Multiplicity="0..1" />
+    <End Role="Doktor3" Type="Self.Doktor3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WaktuTahunDoktor">
+        <PropertyRef Name="WaktuKey" />
+      </Principal>
+      <Dependent Role="Doktor3">
+        <PropertyRef Name="WaktuKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JumlahPSSarjana_Departemen">
+    <End Role="Departemen" Type="Self.Departemen" Multiplicity="0..1" />
+    <End Role="JumlahPSSarjana" Type="Self.JumlahPSSarjana" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departemen">
+        <PropertyRef Name="DepartemenKey" />
+      </Principal>
+      <Dependent Role="JumlahPSSarjana">
+        <PropertyRef Name="DepartemenKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JumlahPSSarjana_WaktuSarjana">
+    <End Role="WaktuSarjana" Type="Self.WaktuSarjana" Multiplicity="0..1" />
+    <End Role="JumlahPSSarjana" Type="Self.JumlahPSSarjana" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WaktuSarjana">
+        <PropertyRef Name="WaktuKey" />
+      </Principal>
+      <Dependent Role="JumlahPSSarjana">
+        <PropertyRef Name="WaktuKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Magister3_DepartemenMagister">
+    <End Role="DepartemenMagister" Type="Self.DepartemenMagister" Multiplicity="0..1" />
+    <End Role="Magister3" Type="Self.Magister3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DepartemenMagister">
+        <PropertyRef Name="DepartemenKey" />
+      </Principal>
+      <Dependent Role="Magister3">
+        <PropertyRef Name="DepartemenKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Magister3_JalurMasuk">
+    <End Role="JalurMasuk" Type="Self.JalurMasuk" Multiplicity="0..1" />
+    <End Role="Magister3" Type="Self.Magister3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JalurMasuk">
+        <PropertyRef Name="JalurMasukKey" />
+      </Principal>
+      <Dependent Role="Magister3">
+        <PropertyRef Name="JalurMasukKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Magister3_JenisKelamin">
+    <End Role="JenisKelamin" Type="Self.JenisKelamin" Multiplicity="0..1" />
+    <End Role="Magister3" Type="Self.Magister3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JenisKelamin">
+        <PropertyRef Name="JenisKelaminKey" />
+      </Principal>
+      <Dependent Role="Magister3">
+        <PropertyRef Name="JenisKelaminKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Magister3_WaktuTahunMagister">
+    <End Role="WaktuTahunMagister" Type="Self.WaktuTahunMagister" Multiplicity="0..1" />
+    <End Role="Magister3" Type="Self.Magister3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WaktuTahunMagister">
+        <PropertyRef Name="WaktuKey" />
+      </Principal>
+      <Dependent Role="Magister3">
+        <PropertyRef Name="WaktuKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RataRataSKSSarjana_WaktuTahunSarjana">
+    <End Role="WaktuTahunSarjana" Type="Self.WaktuTahunSarjana" Multiplicity="1" />
+    <End Role="RataRataSKSSarjana" Type="Self.RataRataSKSSarjana" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WaktuTahunSarjana">
+        <PropertyRef Name="WaktuKey" />
+      </Principal>
+      <Dependent Role="RataRataSKSSarjana">
+        <PropertyRef Name="WaktuKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sarjana3_Departemen">
+    <End Role="Departemen" Type="Self.Departemen" Multiplicity="0..1" />
+    <End Role="Sarjana3" Type="Self.Sarjana3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departemen">
+        <PropertyRef Name="DepartemenKey" />
+      </Principal>
+      <Dependent Role="Sarjana3">
+        <PropertyRef Name="DepartemenKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sarjana3_JalurMasuk">
+    <End Role="JalurMasuk" Type="Self.JalurMasuk" Multiplicity="0..1" />
+    <End Role="Sarjana3" Type="Self.Sarjana3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JalurMasuk">
+        <PropertyRef Name="JalurMasukKey" />
+      </Principal>
+      <Dependent Role="Sarjana3">
+        <PropertyRef Name="JalurMasukKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sarjana3_JenisKelamin">
+    <End Role="JenisKelamin" Type="Self.JenisKelamin" Multiplicity="0..1" />
+    <End Role="Sarjana3" Type="Self.Sarjana3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JenisKelamin">
+        <PropertyRef Name="JenisKelaminKey" />
+      </Principal>
+      <Dependent Role="Sarjana3">
+        <PropertyRef Name="JenisKelaminKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sarjana3_StatusAkademik">
+    <End Role="StatusAkademik" Type="Self.StatusAkademik" Multiplicity="0..1" />
+    <End Role="Sarjana3" Type="Self.Sarjana3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusAkademik">
+        <PropertyRef Name="StatusAkademikKey" />
+      </Principal>
+      <Dependent Role="Sarjana3">
+        <PropertyRef Name="StatusAkademikKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sarjana3_WaktuTahunSarjana">
+    <End Role="WaktuTahunSarjana" Type="Self.WaktuTahunSarjana" Multiplicity="0..1" />
+    <End Role="Sarjana3" Type="Self.Sarjana3" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WaktuTahunSarjana">
+        <PropertyRef Name="WaktuKey" />
+      </Principal>
+      <Dependent Role="Sarjana3">
+        <PropertyRef Name="WaktuKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SarjanaIPKTPB_Departemen">
+    <End Role="Departemen" Type="Self.Departemen" Multiplicity="0..1" />
+    <End Role="SarjanaIPKTPB" Type="Self.SarjanaIPKTPB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departemen">
+        <PropertyRef Name="DepartemenKey" />
+      </Principal>
+      <Dependent Role="SarjanaIPKTPB">
+        <PropertyRef Name="DepartemenKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SarjanaIPKTPB_Waktu">
+    <End Role="WaktuSarjana" Type="Self.WaktuSarjana" Multiplicity="0..1" />
+    <End Role="SarjanaIPKTPB" Type="Self.SarjanaIPKTPB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WaktuSarjana">
+        <PropertyRef Name="WaktuKey" />
+      </Principal>
+      <Dependent Role="SarjanaIPKTPB">
+        <PropertyRef Name="WaktuKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SarjanaLulusan2_Departemen">
+    <End Role="Departemen" Type="Self.Departemen" Multiplicity="0..1" />
+    <End Role="SarjanaLulusan2" Type="Self.SarjanaLulusan2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departemen">
+        <PropertyRef Name="DepartemenKey" />
+      </Principal>
+      <Dependent Role="SarjanaLulusan2">
+        <PropertyRef Name="DepartemenKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SarjanaLulusan2_WaktuSarjana">
+    <End Role="WaktuSarjana" Type="Self.WaktuSarjana" Multiplicity="0..1" />
+    <End Role="SarjanaLulusan2" Type="Self.SarjanaLulusan2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WaktuSarjana">
+        <PropertyRef Name="WaktuKey" />
+      </Principal>
+      <Dependent Role="SarjanaLulusan2">
+        <PropertyRef Name="WaktuKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBPKLG62016ModelStoreContainer">
+    <EntitySet Name="Departemen" EntityType="Self.Departemen" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="DepartemenDoktor" EntityType="Self.DepartemenDoktor" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="DepartemenMagister" EntityType="Self.DepartemenMagister" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="Fakultas" EntityType="Self.Fakultas" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="JalurMasuk" EntityType="Self.JalurMasuk" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="JenisKelamin" EntityType="Self.JenisKelamin" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="Predikat" EntityType="Self.Predikat" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="ProgramKeahlian" EntityType="Self.ProgramKeahlian" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="StatusAkademik" EntityType="Self.StatusAkademik" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="WaktuSarjana" EntityType="Self.WaktuSarjana" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="WaktuTahunDiploma" EntityType="Self.WaktuTahunDiploma" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="WaktuTahunDoktor" EntityType="Self.WaktuTahunDoktor" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="WaktuTahunMagister" EntityType="Self.WaktuTahunMagister" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="WaktuTahunSarjana" EntityType="Self.WaktuTahunSarjana" Schema="Dimensi" store:Type="Tables" />
+    <EntitySet Name="Diploma3" EntityType="Self.Diploma3" Schema="Fact" store:Type="Tables" />
+    <EntitySet Name="Doktor3" EntityType="Self.Doktor3" Schema="Fact" store:Type="Tables" />
+    <EntitySet Name="JumlahPSSarjana" EntityType="Self.JumlahPSSarjana" Schema="Fact" store:Type="Tables" />
+    <EntitySet Name="Magister3" EntityType="Self.Magister3" Schema="Fact" store:Type="Tables" />
+    <EntitySet Name="RataRataSKSSarjana" EntityType="Self.RataRataSKSSarjana" Schema="Fact" store:Type="Tables" />
+    <EntitySet Name="Sarjana3" EntityType="Self.Sarjana3" Schema="Fact" store:Type="Tables" />
+    <EntitySet Name="SarjanaIPKTPB" EntityType="Self.SarjanaIPKTPB" Schema="Fact" store:Type="Tables" />
+    <EntitySet Name="SarjanaLulusan2" EntityType="Self.SarjanaLulusan2" Schema="Fact" store:Type="Tables" />
+    <AssociationSet Name="FK_Departemen_Fakultas" Association="Self.FK_Departemen_Fakultas">
+      <End Role="Fakultas" EntitySet="Fakultas" />
+      <End Role="Departemen" EntitySet="Departemen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DepartemenDoktor_Fakultas" Association="Self.FK_DepartemenDoktor_Fakultas">
+      <End Role="Fakultas" EntitySet="Fakultas" />
+      <End Role="DepartemenDoktor" EntitySet="DepartemenDoktor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DepartemenMagister_Fakultas" Association="Self.FK_DepartemenMagister_Fakultas">
+      <End Role="Fakultas" EntitySet="Fakultas" />
+      <End Role="DepartemenMagister" EntitySet="DepartemenMagister" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Diploma3_JalurMasuk" Association="Self.FK_Diploma3_JalurMasuk">
+      <End Role="JalurMasuk" EntitySet="JalurMasuk" />
+      <End Role="Diploma3" EntitySet="Diploma3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Diploma3_JenisKelamin" Association="Self.FK_Diploma3_JenisKelamin">
+      <End Role="JenisKelamin" EntitySet="JenisKelamin" />
+      <End Role="Diploma3" EntitySet="Diploma3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Diploma3_ProgramKeahlian" Association="Self.FK_Diploma3_ProgramKeahlian">
+      <End Role="ProgramKeahlian" EntitySet="ProgramKeahlian" />
+      <End Role="Diploma3" EntitySet="Diploma3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Diploma3_StatusAkademik" Association="Self.FK_Diploma3_StatusAkademik">
+      <End Role="StatusAkademik" EntitySet="StatusAkademik" />
+      <End Role="Diploma3" EntitySet="Diploma3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Diploma3_WaktuTahunDiploma" Association="Self.FK_Diploma3_WaktuTahunDiploma">
+      <End Role="WaktuTahunDiploma" EntitySet="WaktuTahunDiploma" />
+      <End Role="Diploma3" EntitySet="Diploma3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Doktor3_DepartemenDoktor" Association="Self.FK_Doktor3_DepartemenDoktor">
+      <End Role="DepartemenDoktor" EntitySet="DepartemenDoktor" />
+      <End Role="Doktor3" EntitySet="Doktor3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Doktor3_JalurMasuk" Association="Self.FK_Doktor3_JalurMasuk">
+      <End Role="JalurMasuk" EntitySet="JalurMasuk" />
+      <End Role="Doktor3" EntitySet="Doktor3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Doktor3_JenisKelamin" Association="Self.FK_Doktor3_JenisKelamin">
+      <End Role="JenisKelamin" EntitySet="JenisKelamin" />
+      <End Role="Doktor3" EntitySet="Doktor3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Doktor3_WaktuTahunDoktor" Association="Self.FK_Doktor3_WaktuTahunDoktor">
+      <End Role="WaktuTahunDoktor" EntitySet="WaktuTahunDoktor" />
+      <End Role="Doktor3" EntitySet="Doktor3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JumlahPSSarjana_Departemen" Association="Self.FK_JumlahPSSarjana_Departemen">
+      <End Role="Departemen" EntitySet="Departemen" />
+      <End Role="JumlahPSSarjana" EntitySet="JumlahPSSarjana" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JumlahPSSarjana_WaktuSarjana" Association="Self.FK_JumlahPSSarjana_WaktuSarjana">
+      <End Role="WaktuSarjana" EntitySet="WaktuSarjana" />
+      <End Role="JumlahPSSarjana" EntitySet="JumlahPSSarjana" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Magister3_DepartemenMagister" Association="Self.FK_Magister3_DepartemenMagister">
+      <End Role="DepartemenMagister" EntitySet="DepartemenMagister" />
+      <End Role="Magister3" EntitySet="Magister3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Magister3_JalurMasuk" Association="Self.FK_Magister3_JalurMasuk">
+      <End Role="JalurMasuk" EntitySet="JalurMasuk" />
+      <End Role="Magister3" EntitySet="Magister3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Magister3_JenisKelamin" Association="Self.FK_Magister3_JenisKelamin">
+      <End Role="JenisKelamin" EntitySet="JenisKelamin" />
+      <End Role="Magister3" EntitySet="Magister3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Magister3_WaktuTahunMagister" Association="Self.FK_Magister3_WaktuTahunMagister">
+      <End Role="WaktuTahunMagister" EntitySet="WaktuTahunMagister" />
+      <End Role="Magister3" EntitySet="Magister3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RataRataSKSSarjana_WaktuTahunSarjana" Association="Self.FK_RataRataSKSSarjana_WaktuTahunSarjana">
+      <End Role="WaktuTahunSarjana" EntitySet="WaktuTahunSarjana" />
+      <End Role="RataRataSKSSarjana" EntitySet="RataRataSKSSarjana" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sarjana3_Departemen" Association="Self.FK_Sarjana3_Departemen">
+      <End Role="Departemen" EntitySet="Departemen" />
+      <End Role="Sarjana3" EntitySet="Sarjana3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sarjana3_JalurMasuk" Association="Self.FK_Sarjana3_JalurMasuk">
+      <End Role="JalurMasuk" EntitySet="JalurMasuk" />
+      <End Role="Sarjana3" EntitySet="Sarjana3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sarjana3_JenisKelamin" Association="Self.FK_Sarjana3_JenisKelamin">
+      <End Role="JenisKelamin" EntitySet="JenisKelamin" />
+      <End Role="Sarjana3" EntitySet="Sarjana3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sarjana3_StatusAkademik" Association="Self.FK_Sarjana3_StatusAkademik">
+      <End Role="StatusAkademik" EntitySet="StatusAkademik" />
+      <End Role="Sarjana3" EntitySet="Sarjana3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sarjana3_WaktuTahunSarjana" Association="Self.FK_Sarjana3_WaktuTahunSarjana">
+      <End Role="WaktuTahunSarjana" EntitySet="WaktuTahunSarjana" />
+      <End Role="Sarjana3" EntitySet="Sarjana3" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SarjanaIPKTPB_Departemen" Association="Self.FK_SarjanaIPKTPB_Departemen">
+      <End Role="Departemen" EntitySet="Departemen" />
+      <End Role="SarjanaIPKTPB" EntitySet="SarjanaIPKTPB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SarjanaIPKTPB_Waktu" Association="Self.FK_SarjanaIPKTPB_Waktu">
+      <End Role="WaktuSarjana" EntitySet="WaktuSarjana" />
+      <End Role="SarjanaIPKTPB" EntitySet="SarjanaIPKTPB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SarjanaLulusan2_Departemen" Association="Self.FK_SarjanaLulusan2_Departemen">
+      <End Role="Departemen" EntitySet="Departemen" />
+      <End Role="SarjanaLulusan2" EntitySet="SarjanaLulusan2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SarjanaLulusan2_WaktuSarjana" Association="Self.FK_SarjanaLulusan2_WaktuSarjana">
+      <End Role="WaktuSarjana" EntitySet="WaktuSarjana" />
+      <End Role="SarjanaLulusan2" EntitySet="SarjanaLulusan2" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

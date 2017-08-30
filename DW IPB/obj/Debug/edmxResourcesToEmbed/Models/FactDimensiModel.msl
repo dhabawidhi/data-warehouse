@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBPKLG62016ModelStoreContainer" CdmEntityContainer="DBPKLG62016Entities">
+    <EntitySetMapping Name="Departemen">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.Departeman">
+        <MappingFragment StoreEntitySet="Departemen">
+          <ScalarProperty Name="DepartemenKey" ColumnName="DepartemenKey" />
+          <ScalarProperty Name="DepartemenNama" ColumnName="DepartemenNama" />
+          <ScalarProperty Name="Kode" ColumnName="Kode" />
+          <ScalarProperty Name="FakultasKey" ColumnName="FakultasKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DepartemenDoktors">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.DepartemenDoktor">
+        <MappingFragment StoreEntitySet="DepartemenDoktor">
+          <ScalarProperty Name="DepartemenKey" ColumnName="DepartemenKey" />
+          <ScalarProperty Name="DepartemenNama" ColumnName="DepartemenNama" />
+          <ScalarProperty Name="Kode" ColumnName="Kode" />
+          <ScalarProperty Name="FakultasKey" ColumnName="FakultasKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DepartemenMagisters">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.DepartemenMagister">
+        <MappingFragment StoreEntitySet="DepartemenMagister">
+          <ScalarProperty Name="DepartemenKey" ColumnName="DepartemenKey" />
+          <ScalarProperty Name="DepartemenNama" ColumnName="DepartemenNama" />
+          <ScalarProperty Name="Kode" ColumnName="Kode" />
+          <ScalarProperty Name="FakultasKey" ColumnName="FakultasKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fakultas">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.Fakulta">
+        <MappingFragment StoreEntitySet="Fakultas">
+          <ScalarProperty Name="FakultasKey" ColumnName="FakultasKey" />
+          <ScalarProperty Name="FakultasNama" ColumnName="FakultasNama" />
+          <ScalarProperty Name="Kode" ColumnName="Kode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JalurMasuks">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.JalurMasuk">
+        <MappingFragment StoreEntitySet="JalurMasuk">
+          <ScalarProperty Name="JalurMasukKey" ColumnName="JalurMasukKey" />
+          <ScalarProperty Name="JalurMasukNama" ColumnName="JalurMasukNama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JenisKelamins">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.JenisKelamin">
+        <MappingFragment StoreEntitySet="JenisKelamin">
+          <ScalarProperty Name="JenisKelaminKey" ColumnName="JenisKelaminKey" />
+          <ScalarProperty Name="JenisKelaminNama" ColumnName="JenisKelaminNama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Predikats">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.Predikat">
+        <MappingFragment StoreEntitySet="Predikat">
+          <ScalarProperty Name="PredikatKey" ColumnName="PredikatKey" />
+          <ScalarProperty Name="Nama" ColumnName="Nama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProgramKeahlians">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.ProgramKeahlian">
+        <MappingFragment StoreEntitySet="ProgramKeahlian">
+          <ScalarProperty Name="ProgramKeahlianKey" ColumnName="ProgramKeahlianKey" />
+          <ScalarProperty Name="ProgramKeahlianNama" ColumnName="ProgramKeahlianNama" />
+          <ScalarProperty Name="Kode" ColumnName="Kode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusAkademiks">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.StatusAkademik">
+        <MappingFragment StoreEntitySet="StatusAkademik">
+          <ScalarProperty Name="StatusAkademikKey" ColumnName="StatusAkademikKey" />
+          <ScalarProperty Name="StatusAkademikNama" ColumnName="StatusAkademikNama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaktuMagisters">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.WaktuMagister">
+        <MappingFragment StoreEntitySet="WaktuMagister">
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="TahunMasuk" ColumnName="TahunMasuk" />
+          <ScalarProperty Name="TahunAkademik" ColumnName="TahunAkademik" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaktuMagisterDoktorDiplomas">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.WaktuMagisterDoktorDiploma">
+        <MappingFragment StoreEntitySet="WaktuMagisterDoktorDiploma">
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="TahunMasuk" ColumnName="TahunMasuk" />
+          <ScalarProperty Name="TahunAkademik" ColumnName="TahunAkademik" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaktuSarjanas">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.WaktuSarjana">
+        <MappingFragment StoreEntitySet="WaktuSarjana">
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="TahunAwal" ColumnName="TahunAwal" />
+          <ScalarProperty Name="TahunAkademik" ColumnName="TahunAkademik" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Diplomata">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.Diploma">
+        <MappingFragment StoreEntitySet="Diploma">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="ProgramKeahlianKey" ColumnName="ProgramKeahlianKey" />
+          <ScalarProperty Name="JalurMasukKey" ColumnName="JalurMasukKey" />
+          <ScalarProperty Name="StatusAkademikKey" ColumnName="StatusAkademikKey" />
+          <ScalarProperty Name="JenisKelaminKey" ColumnName="JenisKelaminKey" />
+          <ScalarProperty Name="JumlahMahasiswa" ColumnName="JumlahMahasiswa" />
+          <ScalarProperty Name="RataRataNEMSMA" ColumnName="RataRataNEMSMA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Doktors">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.Doktor">
+        <MappingFragment StoreEntitySet="Doktor">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="DepartemenKey" ColumnName="DepartemenKey" />
+          <ScalarProperty Name="JalurMasukKey" ColumnName="JalurMasukKey" />
+          <ScalarProperty Name="JenisKelaminKey" ColumnName="JenisKelaminKey" />
+          <ScalarProperty Name="JumlahMahasiswa" ColumnName="JumlahMahasiswa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Magisters">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.Magister">
+        <MappingFragment StoreEntitySet="Magister">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="DepartemenKey" ColumnName="DepartemenKey" />
+          <ScalarProperty Name="JalurMasukKey" ColumnName="JalurMasukKey" />
+          <ScalarProperty Name="JenisKelaminKey" ColumnName="JenisKelaminKey" />
+          <ScalarProperty Name="JumlahMahasiswa" ColumnName="JumlahMahasiswa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sarjanas">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.Sarjana">
+        <MappingFragment StoreEntitySet="Sarjana">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="DepartemenKey" ColumnName="DepartemenKey" />
+          <ScalarProperty Name="JalurMasukKey" ColumnName="JalurMasukKey" />
+          <ScalarProperty Name="StatusAkademikKey" ColumnName="StatusAkademikKey" />
+          <ScalarProperty Name="JenisKelaminKey" ColumnName="JenisKelaminKey" />
+          <ScalarProperty Name="JumlahMahasiswa" ColumnName="JumlahMahasiswa" />
+          <ScalarProperty Name="RataRataIPKTPB" ColumnName="RataRataIPKTPB" />
+          <ScalarProperty Name="RataRataSKSDiambil" ColumnName="RataRataSKSDiambil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SarjanaIPKTPBs">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.SarjanaIPKTPB">
+        <MappingFragment StoreEntitySet="SarjanaIPKTPB">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="DepartemenKey" ColumnName="DepartemenKey" />
+          <ScalarProperty Name="RataRataIPKTPB" ColumnName="RataRataIPKTPB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SarjanaLulusans">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.SarjanaLulusan">
+        <MappingFragment StoreEntitySet="SarjanaLulusan">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="DepartemenKey" ColumnName="DepartemenKey" />
+          <ScalarProperty Name="PredikatKey" ColumnName="PredikatKey" />
+          <ScalarProperty Name="RataRataIPKLulusan" ColumnName="RataRataIPKLulusan" />
+          <ScalarProperty Name="RataRataLamaStudi" ColumnName="RataRataLamaStudi" />
+          <ScalarProperty Name="ProsentaseLulusTepatWaktu" ColumnName="ProsentaseLulusTepatWaktu" />
+          <ScalarProperty Name="RataRataWaktuMemperolehPek" ColumnName="RataRataWaktuMemperolehPek" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaktuDoktors">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.WaktuDoktor">
+        <MappingFragment StoreEntitySet="WaktuDoktor">
+          <ScalarProperty Name="TahunAkademik" ColumnName="TahunAkademik" />
+          <ScalarProperty Name="TahunMasuk" ColumnName="TahunMasuk" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SarjanaLulusan2">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.SarjanaLulusan2">
+        <MappingFragment StoreEntitySet="SarjanaLulusan2">
+          <ScalarProperty Name="RataRataWaktuMemperolehPek" ColumnName="RataRataWaktuMemperolehPek" />
+          <ScalarProperty Name="ProsentaseLulusTepatWaktu" ColumnName="ProsentaseLulusTepatWaktu" />
+          <ScalarProperty Name="RataRataLamaStudi" ColumnName="RataRataLamaStudi" />
+          <ScalarProperty Name="RataRataIPKLulusan" ColumnName="RataRataIPKLulusan" />
+          <ScalarProperty Name="DepartemenKey" ColumnName="DepartemenKey" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaktuMasukDiplomas">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.WaktuMasukDiploma">
+        <MappingFragment StoreEntitySet="WaktuMasukDiploma">
+          <ScalarProperty Name="TahunAkademik" ColumnName="TahunAkademik" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaktuMasukDoktors">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.WaktuMasukDoktor">
+        <MappingFragment StoreEntitySet="WaktuMasukDoktor">
+          <ScalarProperty Name="TahunAkademik" ColumnName="TahunAkademik" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaktuMasukMagisters">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.WaktuMasukMagister">
+        <MappingFragment StoreEntitySet="WaktuMasukMagister">
+          <ScalarProperty Name="TahunAkademik" ColumnName="TahunAkademik" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Diploma2">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.Diploma2">
+        <MappingFragment StoreEntitySet="Diploma2">
+          <ScalarProperty Name="RataRataNEMSMA" ColumnName="RataRataNEMSMA" />
+          <ScalarProperty Name="JumlahMahasiswa" ColumnName="JumlahMahasiswa" />
+          <ScalarProperty Name="JenisKelaminKey" ColumnName="JenisKelaminKey" />
+          <ScalarProperty Name="StatusAkademikKey" ColumnName="StatusAkademikKey" />
+          <ScalarProperty Name="JalurMasukKey" ColumnName="JalurMasukKey" />
+          <ScalarProperty Name="ProgramKeahlianKey" ColumnName="ProgramKeahlianKey" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Doktor2">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.Doktor2">
+        <MappingFragment StoreEntitySet="Doktor2">
+          <ScalarProperty Name="JumlahMahasiswa" ColumnName="JumlahMahasiswa" />
+          <ScalarProperty Name="JenisKelaminKey" ColumnName="JenisKelaminKey" />
+          <ScalarProperty Name="JalurMasukKey" ColumnName="JalurMasukKey" />
+          <ScalarProperty Name="DepartemenKey" ColumnName="DepartemenKey" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Magister2">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.Magister2">
+        <MappingFragment StoreEntitySet="Magister2">
+          <ScalarProperty Name="JumlahMahasiswa" ColumnName="JumlahMahasiswa" />
+          <ScalarProperty Name="JenisKelaminKey" ColumnName="JenisKelaminKey" />
+          <ScalarProperty Name="JalurMasukKey" ColumnName="JalurMasukKey" />
+          <ScalarProperty Name="DepartemenKey" ColumnName="DepartemenKey" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sarjana2">
+      <EntityTypeMapping TypeName="DBPKLG62016Model.Sarjana2">
+        <MappingFragment StoreEntitySet="Sarjana2">
+          <ScalarProperty Name="JumlahMahasiswa" ColumnName="JumlahMahasiswa" />
+          <ScalarProperty Name="JenisKelaminKey" ColumnName="JenisKelaminKey" />
+          <ScalarProperty Name="StatusAkademikKey" ColumnName="StatusAkademikKey" />
+          <ScalarProperty Name="JalurMasukKey" ColumnName="JalurMasukKey" />
+          <ScalarProperty Name="DepartemenKey" ColumnName="DepartemenKey" />
+          <ScalarProperty Name="WaktuKey" ColumnName="WaktuKey" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

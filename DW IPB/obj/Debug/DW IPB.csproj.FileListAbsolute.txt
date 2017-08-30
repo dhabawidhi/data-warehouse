@@ -1,0 +1,168 @@
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\ApplicationInsights.config
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\roslyn\csc.exe
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\roslyn\System.Collections.Immutable.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\roslyn\vbc.exe
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\roslyn\VBCSCompiler.exe
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\roslyn\VBCSCompiler.exe.config
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\DW IPB.dll.config
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\DW IPB.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\DW IPB.pdb
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Antlr3.Runtime.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\EntityFramework.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\EntityFramework.SqlServer.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AI.DependencyCollector.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AI.Web.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AI.WindowsServer.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.ApplicationInsights.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.Google.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Newtonsoft.Json.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Owin.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.Helpers.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.Mvc.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.Optimization.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.Razor.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.WebPages.Deployment.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.WebPages.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.WebPages.Razor.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\WebGrease.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AI.DependencyCollector.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AI.Web.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AI.WindowsServer.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.ApplicationInsights.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.Helpers.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.Mvc.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.Optimization.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.Razor.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.WebPages.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.WebPages.Deployment.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\System.Web.WebPages.Razor.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Antlr3.Runtime.pdb
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Newtonsoft.Json.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\EntityFramework.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\EntityFramework.SqlServer.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.Google.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Project\Visual Studio\DW IPB\DW IPB\obj\Debug\DW IPB.dll
+D:\Project\Visual Studio\DW IPB\DW IPB\obj\Debug\DW IPB.pdb
+D:\Project\Visual Studio\DW IPB\DW IPB\obj\Debug\DW IPB.csprojResolveAssemblyReference.cache
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\ApplicationInsights.config
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\roslyn\csc.exe
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\roslyn\System.Collections.Immutable.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\roslyn\vbc.exe
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\roslyn\VBCSCompiler.exe
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\roslyn\VBCSCompiler.exe.config
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\DW IPB.dll.config
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\DW IPB.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\DW IPB.pdb
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Antlr3.Runtime.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\EntityFramework.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\EntityFramework.SqlServer.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AI.DependencyCollector.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AI.Web.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AI.WindowsServer.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.ApplicationInsights.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.Google.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Newtonsoft.Json.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Owin.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.Helpers.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.Mvc.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.Optimization.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.Razor.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.WebPages.Deployment.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.WebPages.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.WebPages.Razor.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\WebGrease.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AI.DependencyCollector.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AI.Web.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AI.WindowsServer.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.ApplicationInsights.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.Helpers.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.Mvc.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.Optimization.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.Razor.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.WebPages.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.WebPages.Deployment.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Web.WebPages.Razor.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Antlr3.Runtime.pdb
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Newtonsoft.Json.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\EntityFramework.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\EntityFramework.SqlServer.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.Google.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\obj\Debug\DW IPB.csprojResolveAssemblyReference.cache
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\obj\Debug\DW IPB.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\obj\Debug\DW IPB.pdb
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\SendGrid.CSharp.HTTP.Client.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\SendGrid.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Net.Http.Formatting.dll
+D:\Project\Visual Studio\DW IPB - Copy\DW IPB\bin\System.Net.Http.Formatting.xml

@@ -1,0 +1,112 @@
+﻿@using DW_IPB.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+@section Header{
+    <title>
+        Sistem Informasi Eksekutif IPB
+    </title>
+}
+
+<div id="main-wrapper">
+    <div class="wrapper style">
+        <div class="container-fluid">
+            <div class="row">
+                <br>
+                <br>
+                <div class="col-sm-offset-1 col-md-6">
+                    <img height="700" width="700" class="img-responsive img-rounded" src="~/plugins/Gambar/IPB-rektorat2.jpg" alt="" />
+                </div>
+                <!-- /.col-md-8 -->
+                <div class="col-md-3">
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-signin", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <h2 class="form-signin-heading">SIE - IPB</h2>
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <input type="text" class="form-control" name="Email" placeholder="Email Address" required="" autofocus="" />
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        <input type="password" class="form-control" name="Password" placeholder="Password" required="" />
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        <label class="checkbox">
+                            Login dengan akun IPB
+                        </label>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                    }
+                </div>
+                <!-- /.col-md-4 -->
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-aqua">
+                        <div class="inner">
+                            @if (ViewBag.jumlahS1 == null || ViewBag.jumlahS1 == 0)
+                            {<h4>Data Belum Terupdate</h4>}
+                            else
+                            {<h3>@ViewData["jumlahS1"] org</h3>}
+                            <p>Mahasiswa S1</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-stats-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-green">
+                        <div class="inner">
+                            @if (ViewBag.jumlahS2 == null || ViewBag.jumlahS2 == 0)
+                            {<h4>Data Belum Terupdate</h4>}
+                            else
+                            {<h3>@ViewData["jumlahS2"] org</h3>}
+                            <p>Mahasiswa S2</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-stats-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-yellow">
+                        <div class="inner">
+                            @if (ViewBag.jumlahS3 == null || ViewBag.jumlahS3 == 0)
+                            {<h4>Data Belum Terupdate</h4>}
+                            else
+                            {<h3>@ViewData["jumlahS3"] org</h3>}
+                            <p>Mahasiswa S3</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-stats-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-red">
+                        <div class="inner">
+                            @if (ViewBag.jumlahD == null || ViewBag.jumlahD == 0)
+                            {<h4>Data Belum Terupdate</h4>}
+                            else
+                            {<h3>@ViewData["jumlahD"] org</h3>}
+                            <p>Mahasiswa D3</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-stats-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./col -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+</div>

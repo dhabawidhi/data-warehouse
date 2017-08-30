@@ -1,0 +1,67 @@
+﻿@model DW_IPB.Models.Sarjana3
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sarjana3</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.JumlahMahasiswa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JumlahMahasiswa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Departeman.DepartemenNama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departeman.DepartemenNama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JalurMasuk.JalurMasukNama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JalurMasuk.JalurMasukNama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JenisKelamin.JenisKelaminNama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JenisKelamin.JenisKelaminNama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusAkademik.StatusAkademikNama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StatusAkademik.StatusAkademikNama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WaktuTahunSarjana.TahunAkademik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WaktuTahunSarjana.TahunAkademik)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

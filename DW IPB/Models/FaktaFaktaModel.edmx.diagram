@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="06f1e48871f94b96861de9ddc8b7a302" Name="Diagram1">
+        <EntityTypeShape EntityType="DBPKLG62016Model2.Departeman" Width="1.5" PointX="3.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.DepartemenDoktor" Width="1.5" PointX="3.75" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.DepartemenMagister" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.Fakulta" Width="1.5" PointX="1.5" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.JalurMasuk" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.JenisKelamin" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.Predikat" Width="1.5" PointX="8.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.ProgramKeahlian" Width="1.5" PointX="0.75" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.StatusAkademik" Width="1.5" PointX="3.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.WaktuMagisterDoktorDiploma" Width="1.5" PointX="8.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.WaktuSarjana" Width="1.5" PointX="3.75" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.WaktuTahunDiploma" Width="1.5" PointX="0.75" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.WaktuTahunDoktor" Width="1.5" PointX="3.75" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.WaktuTahunMagister" Width="1.5" PointX="0.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.WaktuTahunSarjana" Width="1.5" PointX="3.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.Diploma3" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.Doktor3" Width="1.5" PointX="6" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.Magister3" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.Sarjana3" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.SarjanaIPKTPB" Width="1.5" PointX="6" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.SarjanaLulusan" Width="1.5" PointX="9" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Departemen_Fakultas" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Sarjana3_Departemen" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_SarjanaIPKTPB_Departemen" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_SarjanaLulusan_Departemen" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_DepartemenDoktor_Fakultas" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Doktor3_DepartemenDoktor" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_DepartemenMagister_Fakultas" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Magister3_DepartemenMagister" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Diploma3_JalurMasuk" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Doktor3_JalurMasuk" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Magister3_JalurMasuk" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Sarjana3_JalurMasuk" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Diploma3_JenisKelamin" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Doktor3_JenisKelamin" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Magister3_JenisKelamin" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Sarjana3_JenisKelamin" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Diploma3_ProgramKeahlian" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Diploma3_StatusAkademik" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Sarjana3_StatusAkademik" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_SarjanaIPKTPB_Waktu" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_SarjanaLulusan_Waktu" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Diploma3_WaktuTahunDiploma" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Doktor3_WaktuTahunDoktor" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Magister3_WaktuTahunMagister" ManuallyRouted="false" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_Sarjana3_WaktuTahunSarjana" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.JumlahPSSarjana" Width="1.5" PointX="6" PointY="13.5" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.RataRataSKSSarjana" Width="1.5" PointX="6" PointY="16.625" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_JumlahPSSarjana_Departemen" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_JumlahPSSarjana_WaktuSarjana" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_RataRataSKSSarjana_WaktuTahunSarjana" />
+        <EntityTypeShape EntityType="DBPKLG62016Model2.SarjanaLulusan2" Width="1.5" PointX="6" PointY="20.25" />
+        <AssociationConnector Association="DBPKLG62016Model2.FK_SarjanaLulusan2_Departemen" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

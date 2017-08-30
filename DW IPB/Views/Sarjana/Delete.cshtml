@@ -1,0 +1,73 @@
+﻿@model DW_IPB.Models.Sarjana3
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Sarjana3</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.JumlahMahasiswa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JumlahMahasiswa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Departeman.DepartemenNama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departeman.DepartemenNama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JalurMasuk.JalurMasukNama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JalurMasuk.JalurMasukNama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JenisKelamin.JenisKelaminNama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JenisKelamin.JenisKelaminNama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusAkademik.StatusAkademikNama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StatusAkademik.StatusAkademikNama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WaktuTahunSarjana.TahunAkademik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WaktuTahunSarjana.TahunAkademik)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

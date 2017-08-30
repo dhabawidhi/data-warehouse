@@ -1,0 +1,327 @@
+﻿@model IEnumerable<DW_IPB.ViewModels.IPKViewModel>
+@{
+    ViewBag.Title = "JumlahPerPK";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+@section Header{
+    <title>
+        Jumlah DO Mahasiswa Sarjana Per Program Studi @foreach (var item in ViewBag.tahunAkademik)
+    {@item.TahunAkademik;
+    }
+    </title>
+}
+@section MainMenu{
+    <ul class="sidebar-menu">
+        <li class="active treeview">
+            <a href="#">
+                <i class="fa fa-graduation-cap"></i> <span>Akademik</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+
+                <li class="active treeview">
+                    <a href="#">
+                        <i class="fa fa-circle-o text-aqua"></i> Sarjana
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="~/Akademik/Sarjana/JumlahPerStrata"><i class="fa fa-circle-o text-yellow"></i> Prosentase per Strata </a></li>
+                        <li><a href="~/Akademik/Sarjana/JumlahPerProgramStudi"><i class="fa fa-circle-o text-yellow"></i> Jumlah per PS </a></li>
+                        <li><a href="~/Akademik/Sarjana/JumlahPerFakultas"><i class="fa fa-circle-o text-yellow"></i> Jumlah per Fakultas </a></li>
+                        <li><a href="~/Akademik/Sarjana/JumlahPerJalurMasuk"><i class="fa fa-circle-o text-yellow"></i> Jumlah per Jalur Masuk </a></li>
+                        <li><a href="~/Akademik/Sarjana/JumlahMahasiswaAsing"><i class="fa fa-circle-o text-yellow"></i> Jumlah Mahasiswa Asing </a></li>
+                        <li><a href="~/Akademik/Sarjana/JumlahPerJenisKelamin"><i class="fa fa-circle-o text-yellow"></i> Jumlah per Jenis Kelamin </a></li>
+                        <li><a href="~/Akademik/Sarjana/JumlahAsalProv"><i class="fa fa-circle-o text-yellow"></i> Jumlah asal Provinsi </a></li>
+                        <li><a href="~/Akademik/Sarjana/RataRataNEMSMA"><i class="fa fa-circle-o text-yellow"></i> Rata-rata NEM SMA </a></li>
+                        <li><a href="~/Akademik/Sarjana/JumlahPerStatusAkademik"><i class="fa fa-circle-o text-yellow"></i> Status Akademik </a></li>
+                        <li class="active"><a href="~/Akademik/Sarjana/JumlahDOPerProgramStudi"><i class="fa fa-circle-o text-yellow"></i> Jumlah DO per PS </a></li>
+                        <li><a href="~/Akademik/Sarjana/JumlahDOPerJalurMasuk"><i class="fa fa-circle-o text-yellow"></i> Jumlah DO per Jalur Masuk </a></li>
+                        <li><a href="~/Akademik/Sarjana/RataRataIPKTPB"><i class="fa fa-circle-o text-yellow"></i> Rata-rata IPK TPB </a></li>
+                        <li><a href="~/Akademik/Sarjana/RataRataIPKLulusan"><i class="fa fa-circle-o text-yellow"></i> Rata-rata IPK Lulusan </a></li>
+                        <li><a href="~/Akademik/Sarjana/DistribusiPredikatLulusan"><i class="fa fa-circle-o text-yellow"></i> Distribusi Predikat Kelulusan </a></li>
+                        <li><a href="~/Akademik/Sarjana/RataRataLamaStudi"><i class="fa fa-circle-o text-yellow"></i> Rata-rata Lama Studi </a></li>
+                        <li><a href="~/Akademik/Sarjana/ProsentaseLulusTepatWaktu"><i class="fa fa-circle-o text-yellow"></i> Prosentase Lulus Tepat Waktu </a></li>
+                        <li><a href="~/Akademik/Sarjana/RataWakMemperolehKerja"><i class="fa fa-circle-o text-yellow"></i> Rata-rata Waktu Memperoleh Pekerjaan </a></li>
+                        <li><a href="~/Akademik/Sarjana/RataRataSKS"><i class="fa fa-circle-o text-yellow"></i> Rata-rata SKS yg Diambil </a></li>
+                        <li><a href="~/Akademik/Sarjana/JumlahPenerimaBeasiswa"><i class="fa fa-circle-o text-yellow"></i> Jumlah Penerimaan Beasiswa </a></li>
+                        <li><a href="~/Akademik/Sarjana/JumlahBeasiswaPerTahun"><i class="fa fa-circle-o text-yellow"></i> Jumlah Beasiswa per Tahun </a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-circle-o text-aqua"></i> Master
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="~/Akademik/Master/JumlahPerPS"><i class="fa fa-circle-o text-yellow"></i> Jumlah per PS </a></li>
+                        <li><a href="~/Akademik/Master/JumlahPerFakultas"><i class="fa fa-circle-o text-yellow"></i> Jumlah per Fakultas </a></li>
+                        <li><a href="~/Akademik/Master/JumlahPerJalurMasuk"><i class="fa fa-circle-o text-yellow"></i> Jumlah per Jalur Masuk </a></li>
+                        <li><a href="~/Akademik/Master/JumlahMhsAsing"><i class="fa fa-circle-o text-yellow"></i> Jumlah Mahasiswa Asing </a></li>
+                        <li><a href="~/Akademik/Master/JumlahPerJenisKelamin"><i class="fa fa-circle-o text-yellow"></i> Jumlah per Jenis Kelamin </a></li>
+                        <li><a href="~/Akademik/Master/RataIPKLulusan"><i class="fa fa-circle-o text-yellow"></i> Rata-rata IPK Lulusan </a></li>
+                        <li><a href="~/Akademik/Master/RataLamaStudi"><i class="fa fa-circle-o text-yellow"></i> Rata-rata Lama Studi </a></li>
+                        <li><a href="~/Akademik/Master/ProLulusTepatWaktu"><i class="fa fa-circle-o text-yellow"></i> Prosentase Lulus Tepat Waktu </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-circle-o text-aqua"></i> Doktor
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="~/Akademik/Doktor/JumlahPerPS"><i class="fa fa-circle-o text-yellow"></i> Jumlah per PS </a></li>
+                        <li><a href="~/Akademik/Doktor/JumlahPerFakultas"><i class="fa fa-circle-o text-yellow"></i> Jumlah per Fakultas </a></li>
+                        <li><a href="~/Akademik/Doktor/JumlahPerJalurMasuk"><i class="fa fa-circle-o text-yellow"></i> Jumlah per Jalur Masuk </a></li>
+                        <li><a href="~/Akademik/Doktor/JumlahMhsAsing"><i class="fa fa-circle-o text-yellow"></i> Jumlah Mahasiswa Asing </a></li>
+                        <li><a href="~/Akademik/Doktor/JumlahPerJenisKelamin"><i class="fa fa-circle-o text-yellow"></i> Jumlah per Jenis Kelamin </a></li>
+                        <li><a href="~/Akademik/Doktor/RataIPKLulusan"><i class="fa fa-circle-o text-yellow"></i> Rata-rata IPK Lulusan </a></li>
+                        <li><a href="~/Akademik/Doktor/RataLamaStudi"><i class="fa fa-circle-o text-yellow"></i> Rata-rata Lama Studi </a></li>
+                        <li><a href="~/Akademik/Doktor/ProLulusTepatWaktu"><i class="fa fa-circle-o text-yellow"></i> Prosentase Lulus Tepat Waktu </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-circle-o text-aqua"></i> Diploma
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="~/Akademik/Diploma/JumlahPerPK"><i class="fa fa-circle-o text-yellow"></i> Jumlah per PK </a></li>
+                        <li><a href="~/Akademik/Diploma/JumlahPerJalurMasuk"><i class="fa fa-circle-o text-yellow"></i> Jumlah per Jalur Masuk </a></li>
+                        <li><a href="~/Akademik/Diploma/JumlahPerJenisKelamin"><i class="fa fa-circle-o text-yellow"></i> Jumlah per Jenis Kelamin </a></li>
+                        <li><a href="~/Akademik/Diploma/JumlahAsalProv"><i class="fa fa-circle-o text-yellow"></i> Jumlah asal Provinsi </a></li>
+                        <li><a href="~/Akademik/Diploma/RataNEM"><i class="fa fa-circle-o text-yellow"></i> Rata-rata NEM SMA </a></li>
+                        <li><a href="~/Akademik/Diploma/JumlahPerStatusAkademik"><i class="fa fa-circle-o text-yellow"></i> Status Akademik </a></li>
+                        <li><a href="~/Akademik/Diploma/JumDOPerPK"><i class="fa fa-circle-o text-yellow"></i> Jumlah DO per PK </a></li>
+                        <li><a href="~/Akademik/Diploma/JumDOPerJalMas"><i class="fa fa-circle-o text-yellow"></i> Jumlah DO per Jalur Masuk </a></li>
+                        <li><a href="~/Akademik/Diploma/RataIPKLulusan"><i class="fa fa-circle-o text-yellow"></i> Rata-rata IPK Lulusan </a></li>
+                        <li><a href="~/Akademik/Diploma/RataLamaStudi"><i class="fa fa-circle-o text-yellow"></i> Rata-rata Lama Studi </a></li>
+                        <li><a href="~/Akademik/Diploma/ProLulusTepatWaktu"><i class="fa fa-circle-o text-yellow"></i> Prosentase Lulus Tepat Waktu </a></li>
+                        <li><a href="~/Akademik/Diploma/RataWaktuMemperolehKerja"><i class="fa fa-circle-o text-yellow"></i> Rata-rata Waktu Memperoleh Pekerjaan </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a href="#">
+                <i class="fa fa-group"></i> <span>Kepegawaian</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+
+                <li>
+                    <a href="#">
+                        <i class="fa fa-circle-o text-aqua"></i> Dosen
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Prosentase per Strata </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-circle-o text-aqua"></i> TENDIK
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Prosentase per Strata </a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+}
+<section class="content-header">
+    <h3>
+        Jumlah Mahasiswa Tahun Ajaran @foreach (var item in ViewBag.tahunAkademik)
+        {@item.TahunAkademik;
+        }
+    </h3>
+</section>
+@{var waktu = ViewBag.id;}
+<!-- Main content -->
+<section class="content">
+    <!-- Small boxes (Stat box) -->
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    @if (ViewBag.jumlahS1 == null || ViewBag.jumlahS1 == 0)
+                    {<h4>Data Belum Terupdate</h4>}
+                    else
+                    {<h3>@ViewData["jumlahS1"] org</h3>}
+                    <p>Mahasiswa S1</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-green">
+                <div class="inner">
+                    @if (ViewBag.jumlahS2 == null || ViewBag.jumlahS2 == 0)
+                    {<h4>Data Belum Terupdate</h4>}
+                    else
+                    {<h3>@ViewData["jumlahS2"] org</h3>}
+                    <p>Mahasiswa S2</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    @if (ViewBag.jumlahS3 == null || ViewBag.jumlahS3 == 0)
+                    {<h4>Data Belum Terupdate</h4>}
+                    else
+                    {<h3>@ViewData["jumlahS3"] org</h3>}
+                    <p>Mahasiswa S3</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+                <div class="inner">
+                    @if (ViewBag.jumlahD == null || ViewBag.jumlahD == 0)
+                    {<h4>Data Belum Terupdate</h4>}
+                    else
+                    {<h3>@ViewData["jumlahD"] org</h3>}
+                    <p>Mahasiswa D3</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- ./col -->
+    </div>
+    <h3>Jumah DO Mahasiswa Sarjana Per Program Studi</h3>
+    @{ int waktukey = 0;}
+    <form method="post">
+        <div class="form-group">
+            <div class="col-sm-offset-0 col-sm-3">
+                <label for="sel1">Tahun:</label>
+                <select name="id" class="form-control" id="sel1" onchange="this.form.submit()">
+                    @foreach (var item in ViewBag.data)
+                    {
+                        waktukey = item.WaktuKey;
+                        if (waktukey == waktu)
+                        {
+                            <option value="@item.WaktuKey" selected> @item.TahunAkademik</option>
+                        }
+                        else
+                        {
+                            <option value="@item.WaktuKey"> @item.TahunAkademik</option>
+                        }
+                    }
+                </select>
+            </div>
+        </div>
+    </form>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel">
+                <div id="container" style="width: 100%; height: 500px; margin: 0 auto"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+@section scripts{
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script type="text/javascript">
+
+        $('#container').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Jumlah DO Mahasiswa Per Program Studi'
+            },
+            subtitle: {
+                text: 'Source: DIDSI IPB'
+            },
+            xAxis: {
+                type: 'category',
+                labels: {
+                    rotation: -90,
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif'
+                    }
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Jumlah Mahasiswa'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            tooltip: {
+                pointFormat: 'Jumlah Mahasiswa: <b>{point.y:.0f} orang</b>'
+            },
+            series: [{
+                name: 'Population',
+                data: [@foreach (var item in Model) { <text>['</text>@item.kode <text>',</text> @item.ipk <text>],</text> }
+                ],
+                dataLabels: {
+                    enabled: true,
+                    rotation: -90,
+                    color: '#FFFFFF',
+                    align: 'right',
+                    format: '{point.y:.0f}', // one decimal
+                    y: 10, // 10 pixels down from the top
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif'
+                    }
+                }
+            }]
+        });
+    </script>
+}
+
+
+
+
